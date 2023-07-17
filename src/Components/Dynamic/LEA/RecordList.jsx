@@ -7,17 +7,37 @@ import info from "../../../assets/registration 1.png";
 import appointment from "../../../assets/appointment 1.png";
 import logout from "../../../assets/logout.png";
 import logo from "../../../assets/drivechain.png";
-import driver from "../../../assets/drivers-license 2.png";
-import car from "../../../assets/car 3.png";
-import doc from "../../../assets/documents 2.png";
-import nid from "../../../assets/Group 6.svg";
+import RecordDetails from "./RecordDetails";
 
-const VehicleLicense = () => {
+const RecordList = () => {
+  const details = [
+    {
+      licenseNo: "123",
+      txId: "123",
+      offenseType: "Hit and Run",
+      date: "Ajke",
+    },
+    {
+      licenseNo: "123",
+      txId: "123",
+      offenseType: "Hit and Run",
+      date: "Ajke",
+    },
+    {
+      licenseNo: "123",
+      txId: "123",
+      offenseType: "Hit and Run",
+      date: "Ajke",
+    },
+  ];
+
+  let i = 0;
+
   return (
     <div className="Vehicle-license flex container mx-auto justify-between my-10">
       <div className="bg-three w-1/5 flex flex-col rounded-lg">
         <div className="p-5">
-          <h3 className="text-3xl text-white font-bold">BSP</h3>
+          <h3 className="text-3xl text-white font-bold">LEA</h3>
           <div className="flex my-2">
             <img src={user} alt="user" />
             <div className="ml-2">
@@ -27,7 +47,7 @@ const VehicleLicense = () => {
           </div>
         </div>
         <Link
-          to="/e-license"
+          to="/scan-e-license"
           className="bg-four hover:bg-gray-600 duration-100 p-3 m-5 text-white rounded font-bold flex items-center"
         >
           <img src={home} className="w-8 mr-4" alt="home" />
@@ -38,7 +58,7 @@ const VehicleLicense = () => {
           Scan vehicle license
         </Link>
         <Link
-          to="/records"
+          to="/record-list"
           className="bg-four p-3 m-5 rounded font-bold flex items-center bg-white"
         >
           <img src={info} className="w-8 mr-4" alt="home" />
@@ -58,24 +78,33 @@ const VehicleLicense = () => {
           <img src={logo} alt="logo" />
           <h1 className="text-5xl my-5">DRIVECHAIN</h1>
         </div>
-        <div className="bg-three flex flex-col shadow-lg p-5 rounded-lg">
-          <Link className="bg-four p-5 my-5 font-bold text-white text-xl rounded-lg flex justify-between">
-            Vehicle license
-            <img src={nid} alt="nid" />
-            <img src={driver} className="w-10 h-10" alt="document" />
-          </Link>
-          <Link className="bg-four p-5 my-5 font-bold text-white text-xl rounded-lg flex justify-between items-center">
-            View tax token
-            <img src={car} className="w-10" alt="document" />
-          </Link>
-          <Link className="bg-four p-5 my-5 font-bold text-white text-xl rounded-lg flex justify-between items-center">
-            View fitness certificate
-            <img src={doc} className="w-10" alt="document" />
-          </Link>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="table table-zebra">
+            {/* head */}
+            <thead className="bg-three text-white">
+              <tr>
+                <th>SL</th>
+                <th>License No.</th>
+                <th>TxID</th>
+                <th>Offense Type</th>
+                <th>Date</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              {details.map((detail, idx) => (
+                <RecordDetails
+                  key={idx}
+                  detail={detail}
+                  serial={++i}
+                ></RecordDetails>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   );
 };
 
-export default VehicleLicense;
+export default RecordList;

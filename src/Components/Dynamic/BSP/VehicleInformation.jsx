@@ -15,9 +15,9 @@ import certificate from "../../../assets/certificate 1.png";
 import clipboard from "../../../assets/clipboard 1.png";
 import calender from "../../../assets/calendar 1.png";
 
-const Home = () => {
+const VehicleInformation = () => {
   return (
-    <div className="Home flex container m-auto justify-between">
+    <div className="Vehicle-information flex container m-auto justify-between mt-20">
       <div className="bg-one w-1/5 flex flex-col rounded-lg">
         <div className="p-5">
           <h3 className="text-3xl text-white font-bold">BSP</h3>
@@ -29,15 +29,24 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Link className="bg-two p-3 m-5 rounded-lg font-bold flex items-center bg-white">
+        <Link
+          to="/bsp-panel"
+          className="bg-two p-3 m-5 rounded-lg font-bold flex items-center"
+        >
           <img src={home} className="w-8 mr-4" alt="home" />
           Home
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link
+          to="/license-application"
+          className="bg-two p-3 m-5 rounded font-bold flex items-center"
+        >
           <img src={licence} className="w-8 mr-4" alt="home" />
           Driving License
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link
+          to="/vehicle-information"
+          className="bg-two p-3 m-5 rounded font-bold flex items-center bg-white"
+        >
           <img src={info} className="w-8 mr-4" alt="home" />
           Vehicle Information
         </Link>
@@ -53,7 +62,10 @@ const Home = () => {
           <img src={history} className="w-8 mr-4" alt="home" />
           Payment History
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link
+          to="/login"
+          className="bg-two p-3 m-5 rounded font-bold flex items-center"
+        >
           <img src={logout} className="w-8 mr-4" alt="home" />
           Logout
         </Link>
@@ -80,8 +92,11 @@ const Home = () => {
             View insurance certificate
             <img src={clipboard} className="w-10" alt="document" />
           </Link>
-          <Link className="bg-one p-5 my-5 font-bold text-white text-xl rounded-lg flex justify-between items-center">
-            View maintenance and service records
+          <Link
+            to="/transfer-ownership"
+            className="bg-one p-5 my-5 font-bold text-white text-xl rounded-lg flex justify-between items-center"
+          >
+            Transfer ownership
             <img src={calender} className="w-10" alt="document" />
           </Link>
         </div>
@@ -90,4 +105,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default VehicleInformation;
