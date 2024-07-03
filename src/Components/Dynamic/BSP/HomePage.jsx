@@ -10,6 +10,7 @@ import payment from "../../../assets/payment-method 1.png";
 import history from "../../../assets/payment.png";
 import logout from "../../../assets/logout.png";
 import avatar from "../../../assets/avatar7 2.png";
+import { MdToken } from "react-icons/md";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -33,35 +34,42 @@ const HomePage = () => {
         </div>
         <Link
           to="/"
-          className="bg-two p-3 m-5 rounded-lg font-bold flex items-center bg-white"
+          className="bg-two p-3 mx-5 my-2 rounded-lg font-bold flex items-center bg-white"
         >
           <img src={home} className="w-8 mr-4" alt="home" />
           Home
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link
+          to="/"
+          className="bg-two p-3 mx-5 my-2 rounded-lg font-bold flex items-center"
+        >
+          <MdToken size={30}></MdToken>
+          <span className="mx-2">NFT Marketplace</span>
+        </Link>
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={licence} className="w-8 mr-4" alt="home" />
           Driving License
         </Link>
         <Link
           to="/vehicle-information"
-          className="bg-two p-3 m-5 rounded font-bold flex items-center"
+          className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center"
         >
           <img src={info} className="w-8 mr-4" alt="home" />
           Vehicle Information
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={appointment} className="w-8 mr-4" alt="home" />
           Appointment
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={payment} className="w-8 mr-4" alt="home" />
           Payment
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={history} className="w-8 mr-4" alt="home" />
           Payment History
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={logout} className="w-8 mr-4" alt="home" />
           Logout
         </Link>

@@ -29,31 +29,31 @@ const TransferOwnership = () => {
             </div>
           </div>
         </div>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={home} className="w-8 mr-4" alt="home" />
           Home
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={licence} className="w-8 mr-4" alt="home" />
           Driving License
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center bg-white">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center bg-white">
           <img src={info} className="w-8 mr-4" alt="home" />
           Vehicle Information
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={appointment} className="w-8 mr-4" alt="home" />
           Appointment
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={payment} className="w-8 mr-4" alt="home" />
           Payment
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={history} className="w-8 mr-4" alt="home" />
           Payment History
         </Link>
-        <Link className="bg-two p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={logout} className="w-8 mr-4" alt="home" />
           Logout
         </Link>
