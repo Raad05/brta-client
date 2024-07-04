@@ -29,15 +29,18 @@ const Marketplace = () => {
           <FaRegUserCircle size={30} className="text-black"></FaRegUserCircle>
         </div>
       </nav>
-      <div className="grid grid-cols-5 gap-y-5 mx-10">
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
-        <NFTCard></NFTCard>
+      <div>
+        <h3 className="text-xl mx-10 mt-5 mb-10 font-bold">Owned NFTs</h3>
+        <div className="grid grid-cols-5 gap-y-5 mx-10">
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+          <NFTCard></NFTCard>
+        </div>
       </div>
     </div>
   );
