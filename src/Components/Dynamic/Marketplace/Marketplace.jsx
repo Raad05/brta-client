@@ -1,5 +1,6 @@
 import logo from "../../../assets/drivechain.png";
 import { FaRegUserCircle } from "react-icons/fa";
+import NFTCard from "../NFTCard/NFTCard";
 
 const Marketplace = () => {
   return (
@@ -28,6 +29,16 @@ const Marketplace = () => {
           <FaRegUserCircle size={30} className="text-black"></FaRegUserCircle>
         </div>
       </nav>
+      <div className="grid grid-cols-5 gap-y-5 mx-10">
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+        <NFTCard></NFTCard>
+      </div>
     </div>
   );
 };

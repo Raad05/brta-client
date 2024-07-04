@@ -2,7 +2,7 @@ import iln from "../../../assets/ILN.png";
 
 const NFTCard = () => {
   return (
-    <div className="nft-card max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-800 text-white">
+    <div className="nft-card max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-800 text-white w-80">
       <img className="w-full" src={iln} alt="Summer is ON" />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">
