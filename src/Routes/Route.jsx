@@ -15,6 +15,7 @@ import ScanLicense from "../Components/Dynamic/LEA/ScanLicense";
 import VehicleInformation from "../Components/Dynamic/BSP/VehicleInformation";
 import HomePage from "../Components/Dynamic/BSP/HomePage";
 import BSPPanel from "../Components/Dynamic/BSP/BSPPanel";
+import Marketplace from "../Components/Dynamic/Marketplace/Marketplace";
 
 export const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ export const router = createBrowserRouter([
       {
         path: "/vehicle-information",
         element: <VehicleInformation></VehicleInformation>,
+      },
+      {
+        path: "/marketplace",
+        element: <Marketplace></Marketplace>,
       },
     ],
   },
