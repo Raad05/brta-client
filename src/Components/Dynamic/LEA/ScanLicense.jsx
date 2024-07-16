@@ -24,30 +24,30 @@ const ScanLicense = () => {
         </div>
         <Link
           to="/scan-e-license"
-          className="bg-four p-3 m-5 rounded font-bold flex items-center bg-white"
+          className="bg-four p-3 mx-5 my-2 rounded font-bold flex items-center bg-white"
         >
           <img src={home} className="w-8 mr-4" alt="home" />
           Scan e-license
         </Link>
         <Link
           to="/e-license"
-          className="bg-four hover:bg-gray-600 duration-100 p-3 m-5 text-white rounded font-bold flex items-center"
+          className="bg-four hover:bg-gray-600 duration-100 p-3 mx-5 my-2 text-white rounded font-bold flex items-center"
         >
           <img src={licence} className="w-8 mr-4" alt="home" />
           Scan vehicle license
         </Link>
         <Link
           to="/record-list"
-          className="bg-four hover:bg-gray-600 duration-100 p-3 m-5 text-white rounded font-bold flex items-center"
+          className="bg-four hover:bg-gray-600 duration-100 p-3 mx-5 my-2 text-white rounded font-bold flex items-center"
         >
           <img src={info} className="w-8 mr-4" alt="home" />
           See records
         </Link>
-        <Link className="bg-four hover:bg-gray-600 duration-100 p-3 m-5 text-white rounded font-bold flex items-center">
+        <Link className="bg-four hover:bg-gray-600 duration-100 p-3 mx-5 my-2 text-white rounded font-bold flex items-center">
           <img src={appointment} className="w-8 mr-4" alt="home" />
           Contact BRTA
         </Link>
-        <Link className="bg-four hover:bg-gray-600 duration-100 p-3 m-5 text-white rounded font-bold flex items-center">
+        <Link className="bg-four hover:bg-gray-600 duration-100 p-3 mx-5 my-2 text-white rounded font-bold flex items-center">
           <img src={logout} className="w-8 mr-4" alt="home" />
           Logout
         </Link>
