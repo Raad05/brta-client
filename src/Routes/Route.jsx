@@ -16,6 +16,7 @@ import VehicleInformation from "../Components/Dynamic/BSP/VehicleInformation";
 import HomePage from "../Components/Dynamic/BSP/HomePage";
 import BSPPanel from "../Components/Dynamic/BSP/BSPPanel";
 import Marketplace from "../Components/Dynamic/Marketplace/Marketplace";
+import Explore from "../Components/Dynamic/Explore/Explore";
 
 export const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ export const router = createBrowserRouter([
       {
         path: "/marketplace",
         element: <Marketplace></Marketplace>,
+      },
+      {
+        path: "/explore",
+        element: <Explore></Explore>,
       },
     ],
   },
