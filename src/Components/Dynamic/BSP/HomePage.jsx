@@ -72,7 +72,10 @@ const HomePage = () => {
           <img src={history} className="w-8 mr-4" alt="home" />
           Payment History
         </Link>
-        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
+        <Link
+          to="/login"
+          className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center"
+        >
           <img src={logout} className="w-8 mr-4" alt="home" />
           Logout
         </Link>

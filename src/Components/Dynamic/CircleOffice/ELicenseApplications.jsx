@@ -16,21 +16,21 @@ const ELicenseApplications = () => {
       nidNo: "123",
       name: "123",
       userDocuments: "Hit and Run",
-      date: "Ajke",
+      date: "Today",
       approval: "Pending",
     },
     {
       nidNo: "123",
       name: "123",
       userDocuments: "Hit and Run",
-      date: "Ajke",
+      date: "Today",
       approval: "Pending",
     },
     {
       nidNo: "123",
       name: "123",
       userDocuments: "Hit and Run",
-      date: "Ajke",
+      date: "Today",
       approval: "Pending",
     },
   ];
@@ -50,30 +50,33 @@ const ELicenseApplications = () => {
             </div>
           </div>
         </div>
-        <Link className="bg-eight p-3 m-5 rounded-lg font-bold flex items-center bg-white">
+        <Link className="bg-eight p-3 mx-5 my-2 rounded-lg font-bold flex items-center bg-white">
           <img src={home} className="w-8 mr-4" alt="home" />
           E-License Applications
         </Link>
         <Link
           to="/vehicle-registration"
-          className="bg-eight p-3 m-5 rounded font-bold flex items-center"
+          className="bg-eight p-3 mx-5 my-2 rounded font-bold flex items-center"
         >
           <img src={licence} className="w-8 mr-4" alt="home" />
           Vehicle License Application
         </Link>
-        <Link className="bg-eight p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-eight p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={info} className="w-8 mr-4" alt="home" />
           Tax Token Applications
         </Link>
-        <Link className="bg-eight p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-eight p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={appointment} className="w-8 mr-4" alt="home" />
           Fitness Certificates
         </Link>
-        <Link className="bg-eight p-3 m-5 rounded font-bold flex items-center">
+        <Link className="bg-eight p-3 mx-5 my-2 rounded font-bold flex items-center">
           <img src={licence} className="w-8 mr-4" alt="home" />
           Freeze Certificates
         </Link>
-        <Link className="bg-eight p-3 m-5 rounded font-bold flex items-center">
+        <Link
+          to="/login"
+          className="bg-eight p-3 mx-5 my-2 rounded font-bold flex items-center"
+        >
           <img src={logout} className="w-8 mr-4" alt="home" />
           Logout
         </Link>
