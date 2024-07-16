@@ -40,13 +40,16 @@ const HomePage = () => {
           Home
         </Link>
         <Link
-          to="/"
+          to="/marketplace"
           className="bg-two p-3 mx-5 my-2 rounded-lg font-bold flex items-center"
         >
           <MdToken size={30}></MdToken>
           <span className="mx-2">NFT Marketplace</span>
         </Link>
-        <Link className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center">
+        <Link
+          to="/license-application"
+          className="bg-two p-3 mx-5 my-2 rounded font-bold flex items-center"
+        >
           <img src={licence} className="w-8 mr-4" alt="home" />
           Driving License
         </Link>
