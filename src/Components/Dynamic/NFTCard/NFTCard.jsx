@@ -1,4 +1,4 @@
-import iln from "../../../assets/ILN.png";
+import iln from "../../../assets/avatar7 2.png";
 
 const NFTCard = () => {
   return (
@@ -6,10 +6,10 @@ const NFTCard = () => {
       <img className="w-full" src={iln} alt="Summer is ON" />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">
-          ILN NFT<span className="text-yellow-500">🌟</span>
+          Avatar NFT<span className="text-yellow-500">🌟</span>
         </div>
 
-        <p className="text-base">Very Dhanda</p>
+        <p className="text-base">Demo Avatar NFT Description</p>
       </div>
       <div className="p-4 mx-4 mb-4 rounded-lg flex justify-between items-center bg-gray-700">
         <div className="text-green-500 flex items-center">
