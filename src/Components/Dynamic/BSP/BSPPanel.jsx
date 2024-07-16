@@ -39,7 +39,7 @@ const BSPPanel = () => {
           Home
         </Link>
         <Link
-          to="/"
+          to="/marketplace"
           className="bg-two p-3 mx-5 my-2 rounded-lg font-bold flex items-center"
         >
           <MdToken size={30}></MdToken>
